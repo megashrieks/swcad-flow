@@ -1,0 +1,25 @@
+{
+  "id": "lane",
+  "name": "Swimlane",
+  "version": "1.0.0",
+  "category": "flow",
+  "description": "A labelled lane to put steps in, so a flow says who does what. A route with an end inside the lane is let through it; one merely passing over is not.",
+  "defaultSize": { "w": 520, "h": 160 },
+  "params": [
+    {
+      "name": "orientation",
+      "type": "enum",
+      "label": "Orientation",
+      "default": "horizontal",
+      "options": ["horizontal", "vertical"]
+    },
+    { "name": "title", "type": "string", "label": "Title", "default": "Lane" },
+    { "name": "headerSize", "type": "number", "label": "Header", "default": 34, "min": 16, "step": 1 },
+    { "name": "headerFill", "type": "color", "label": "Header fill", "default": "var(--sw-surface)" },
+    { "name": "fill", "type": "color", "label": "Fill", "default": "none" },
+    { "name": "stroke", "type": "color", "label": "Stroke", "default": "var(--sw-ink-muted)" },
+    { "name": "ink", "type": "color", "label": "Text", "default": "var(--sw-ink)" },
+    { "name": "fontSize", "type": "number", "label": "Font size", "default": 13, "min": 6 },
+    { "name": "lineWidth", "type": "number", "label": "Line width", "default": 1.2, "min": 0.2, "step": 0.1 }
+  ]
+}

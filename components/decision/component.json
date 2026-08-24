@@ -1,0 +1,130 @@
+{
+  "id": "decision",
+  "name": "Decision",
+  "version": "1.0.0",
+  "category": "flow",
+  "description": "A branch point, drawn as a hexagon so it grows sideways with its question instead of ballooning like a diamond. Exits are named: yes leaves the right, no leaves the bottom.",
+  "defaultSize": {
+    "w": 200,
+    "h": 80
+  },
+  "params": [
+    {
+      "name": "question",
+      "type": "string",
+      "label": "Question",
+      "default": "Approved?"
+    },
+    {
+      "name": "icon",
+      "type": "enum",
+      "label": "Icon",
+      "default": "",
+      "description": "An icon from the shared set in the base library, or blank for none.",
+      "options": [
+        "",
+        "agent",
+        "alert",
+        "attachment",
+        "backlog",
+        "bell",
+        "board",
+        "burndown",
+        "calendar",
+        "chart",
+        "chat",
+        "check",
+        "comment",
+        "commit",
+        "epic",
+        "feature-flag",
+        "field",
+        "filter",
+        "form",
+        "gear",
+        "git-branch",
+        "image",
+        "inbox",
+        "info",
+        "key",
+        "link",
+        "lock",
+        "marketplace",
+        "mention",
+        "org",
+        "plugin",
+        "pull-request",
+        "retry",
+        "role",
+        "search",
+        "shield",
+        "sprint",
+        "tag",
+        "team",
+        "template",
+        "terminal",
+        "ticket",
+        "timer",
+        "upload",
+        "warning",
+        "workflow"
+      ]
+    },
+    {
+      "name": "point",
+      "type": "number",
+      "label": "Point depth",
+      "default": 20,
+      "min": 0,
+      "step": 1,
+      "description": "How far the chevron ends cut in. 0 is a plain rounded box."
+    },
+    {
+      "name": "accent",
+      "type": "color",
+      "label": "Accent",
+      "default": "var(--sw-accent)"
+    },
+    {
+      "name": "fill",
+      "type": "color",
+      "label": "Fill",
+      "default": "var(--sw-surface)"
+    },
+    {
+      "name": "stroke",
+      "type": "color",
+      "label": "Stroke",
+      "default": "var(--sw-line)"
+    },
+    {
+      "name": "ink",
+      "type": "color",
+      "label": "Text",
+      "default": "var(--sw-ink)"
+    },
+    {
+      "name": "fontSize",
+      "type": "number",
+      "label": "Font size",
+      "default": 14,
+      "min": 6
+    },
+    {
+      "name": "iconSize",
+      "type": "number",
+      "label": "Icon size",
+      "default": 18,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "name": "lineWidth",
+      "type": "number",
+      "label": "Line width",
+      "default": 1.2,
+      "min": 0.2,
+      "step": 0.1
+    }
+  ]
+}

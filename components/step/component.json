@@ -1,0 +1,135 @@
+{
+  "id": "step",
+  "name": "Step",
+  "version": "1.0.0",
+  "category": "flow",
+  "description": "A step in a process: a title, a description under it, an optional icon and an optional number badge. The card grows to hold its text rather than clipping it.",
+  "defaultSize": {
+    "w": 240,
+    "h": 96
+  },
+  "params": [
+    {
+      "name": "number",
+      "type": "string",
+      "label": "Badge",
+      "default": "",
+      "description": "An ordinal in a filled chip. Blank for no badge."
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "label": "Title",
+      "default": "Step"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "label": "Description",
+      "default": "What happens here.",
+      "multiline": true
+    },
+    {
+      "name": "icon",
+      "type": "enum",
+      "label": "Icon",
+      "default": "",
+      "description": "An icon from the shared set in the base library, or blank for none.",
+      "options": [
+        "",
+        "agent",
+        "alert",
+        "attachment",
+        "backlog",
+        "bell",
+        "board",
+        "burndown",
+        "calendar",
+        "chart",
+        "chat",
+        "check",
+        "comment",
+        "commit",
+        "epic",
+        "feature-flag",
+        "field",
+        "filter",
+        "form",
+        "gear",
+        "git-branch",
+        "image",
+        "inbox",
+        "info",
+        "key",
+        "link",
+        "lock",
+        "marketplace",
+        "mention",
+        "org",
+        "plugin",
+        "pull-request",
+        "retry",
+        "role",
+        "search",
+        "shield",
+        "sprint",
+        "tag",
+        "team",
+        "template",
+        "terminal",
+        "ticket",
+        "timer",
+        "upload",
+        "warning",
+        "workflow"
+      ]
+    },
+    {
+      "name": "accent",
+      "type": "color",
+      "label": "Accent",
+      "default": "var(--sw-accent)"
+    },
+    {
+      "name": "fill",
+      "type": "color",
+      "label": "Fill",
+      "default": "var(--sw-surface)"
+    },
+    {
+      "name": "stroke",
+      "type": "color",
+      "label": "Stroke",
+      "default": "var(--sw-line)"
+    },
+    {
+      "name": "ink",
+      "type": "color",
+      "label": "Text",
+      "default": "var(--sw-ink)"
+    },
+    {
+      "name": "fontSize",
+      "type": "number",
+      "label": "Font size",
+      "default": 14,
+      "min": 6
+    },
+    {
+      "name": "iconSize",
+      "type": "number",
+      "label": "Icon size",
+      "default": 20,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "name": "lineWidth",
+      "type": "number",
+      "label": "Line width",
+      "default": 1.2,
+      "min": 0.2,
+      "step": 0.1
+    }
+  ]
+}

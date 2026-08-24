@@ -1,0 +1,14 @@
+{
+  "id": "flow",
+  "name": "Flow",
+  "version": "1.0.0",
+  "description": "Modern flowchart pieces: a step card with a title and a description, a hexagonal decision with named yes/no exits, a switch that branches a value into a row per case, a coloured callout, a swimlane and a start/end pill. Cards rather than the 1970s template shapes - the classical vocabulary of diamonds and parallelograms is in the UML library. Everything sizes itself to its text rather than clipping it, and every colour is a theme token.",
+  "components": [
+    "components/terminator",
+    "components/step",
+    "components/decision",
+    "components/switch",
+    "components/note",
+    "components/lane"
+  ]
+}

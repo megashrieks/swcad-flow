@@ -1,0 +1,8 @@
+{
+  "body": [
+    { "kind": "hit_area" },
+    { "kind": "port", "name": "edge", "direction": "inout", "surface": "outline" }
+  ],
+  "title": { "kind": "label", "bind": "params.title", "align": "start", "editable": true },
+  "number": { "kind": "label", "bind": "params.number", "align": "center", "editable": true }
+}

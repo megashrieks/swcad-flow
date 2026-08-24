@@ -1,0 +1,138 @@
+{
+  "id": "switch",
+  "name": "Switch",
+  "version": "1.0.0",
+  "category": "flow",
+  "description": "A multi-way branch: a header naming what is being switched on, then one row per case, each with its own exit. The cases are one list, an entry per line, so the card is as long as the list and no longer. Every exit is named after its case and appears on both sides of the card, so a connector leaving one says which branch it is without a label, and takes whichever side it is closer to.",
+  "defaultSize": {
+    "w": 220,
+    "h": 148
+  },
+  "resizable": false,
+  "params": [
+    {
+      "name": "subject",
+      "type": "string",
+      "label": "Switch on",
+      "default": "status",
+      "description": "What is being tested — the expression the cases are values of."
+    },
+    {
+      "name": "cases",
+      "type": "string",
+      "label": "Cases",
+      "multiline": true,
+      "default": "open\nin progress\nclosed",
+      "description": "One case per line. Each gets a row and a pair of exits named after it; blank lines are skipped."
+    },
+    {
+      "name": "fallback",
+      "type": "string",
+      "label": "Default",
+      "default": "default",
+      "description": "The catch-all row, set in muted ink under a heavier rule. Blank for a switch that has to match."
+    },
+    {
+      "name": "icon",
+      "type": "enum",
+      "label": "Icon",
+      "default": "",
+      "description": "An icon from the shared set in the base library, or blank for none.",
+      "options": [
+        "",
+        "agent",
+        "alert",
+        "attachment",
+        "backlog",
+        "bell",
+        "board",
+        "burndown",
+        "calendar",
+        "chart",
+        "chat",
+        "check",
+        "comment",
+        "commit",
+        "epic",
+        "feature-flag",
+        "field",
+        "filter",
+        "form",
+        "gear",
+        "git-branch",
+        "image",
+        "inbox",
+        "info",
+        "key",
+        "link",
+        "lock",
+        "marketplace",
+        "mention",
+        "org",
+        "plugin",
+        "pull-request",
+        "retry",
+        "role",
+        "search",
+        "shield",
+        "sprint",
+        "tag",
+        "team",
+        "template",
+        "terminal",
+        "ticket",
+        "timer",
+        "upload",
+        "warning",
+        "workflow"
+      ]
+    },
+    {
+      "name": "accent",
+      "type": "color",
+      "label": "Accent",
+      "default": "var(--sw-accent)"
+    },
+    {
+      "name": "fill",
+      "type": "color",
+      "label": "Fill",
+      "default": "var(--sw-surface)"
+    },
+    {
+      "name": "stroke",
+      "type": "color",
+      "label": "Stroke",
+      "default": "var(--sw-line)"
+    },
+    {
+      "name": "ink",
+      "type": "color",
+      "label": "Text",
+      "default": "var(--sw-ink)"
+    },
+    {
+      "name": "fontSize",
+      "type": "number",
+      "label": "Font size",
+      "default": 14,
+      "min": 6
+    },
+    {
+      "name": "iconSize",
+      "type": "number",
+      "label": "Icon size",
+      "default": 18,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "name": "lineWidth",
+      "type": "number",
+      "label": "Line width",
+      "default": 1.2,
+      "min": 0.2,
+      "step": 0.1
+    }
+  ]
+}

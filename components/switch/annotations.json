@@ -1,0 +1,12 @@
+{
+  "body": [
+    { "kind": "hit_area" },
+    { "kind": "port", "name": "edge", "direction": "inout", "surface": "outline" }
+  ],
+  "p-in": { "kind": "port", "name": "in", "direction": "in", "facing": [0, -1], "surface": "outline" },
+  "p-in-left": { "kind": "port", "name": "in", "direction": "in", "facing": [-1, 0], "surface": "outline" },
+  "p-in-right": { "kind": "port", "name": "in", "direction": "in", "facing": [1, 0], "surface": "outline" },
+
+  "subject": { "kind": "label", "bind": "params.subject", "align": "start", "editable": true },
+  "fallback": { "kind": "label", "bind": "params.fallback", "align": "start", "editable": true }
+}

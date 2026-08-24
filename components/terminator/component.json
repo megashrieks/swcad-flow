@@ -1,0 +1,121 @@
+{
+  "id": "terminator",
+  "name": "Terminator",
+  "version": "1.0.0",
+  "category": "flow",
+  "description": "The start or end of a flow: a pill with a word in it. Filled by default so it punctuates the diagram; turn Solid off for an outlined one.",
+  "defaultSize": {
+    "w": 120,
+    "h": 40
+  },
+  "params": [
+    {
+      "name": "text",
+      "type": "string",
+      "label": "Text",
+      "default": "Start"
+    },
+    {
+      "name": "solid",
+      "type": "boolean",
+      "label": "Solid",
+      "default": true
+    },
+    {
+      "name": "icon",
+      "type": "enum",
+      "label": "Icon",
+      "default": "",
+      "description": "An icon from the shared set in the base library, or blank for none.",
+      "options": [
+        "",
+        "agent",
+        "alert",
+        "attachment",
+        "backlog",
+        "bell",
+        "board",
+        "burndown",
+        "calendar",
+        "chart",
+        "chat",
+        "check",
+        "comment",
+        "commit",
+        "epic",
+        "feature-flag",
+        "field",
+        "filter",
+        "form",
+        "gear",
+        "git-branch",
+        "image",
+        "inbox",
+        "info",
+        "key",
+        "link",
+        "lock",
+        "marketplace",
+        "mention",
+        "org",
+        "plugin",
+        "pull-request",
+        "retry",
+        "role",
+        "search",
+        "shield",
+        "sprint",
+        "tag",
+        "team",
+        "template",
+        "terminal",
+        "ticket",
+        "timer",
+        "upload",
+        "warning",
+        "workflow"
+      ]
+    },
+    {
+      "name": "accent",
+      "type": "color",
+      "label": "Accent",
+      "default": "var(--sw-accent)"
+    },
+    {
+      "name": "fill",
+      "type": "color",
+      "label": "Fill",
+      "default": "var(--sw-surface)"
+    },
+    {
+      "name": "ink",
+      "type": "color",
+      "label": "Text",
+      "default": ""
+    },
+    {
+      "name": "fontSize",
+      "type": "number",
+      "label": "Font size",
+      "default": 13,
+      "min": 6
+    },
+    {
+      "name": "iconSize",
+      "type": "number",
+      "label": "Icon size",
+      "default": 16,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "name": "lineWidth",
+      "type": "number",
+      "label": "Line width",
+      "default": 1.2,
+      "min": 0.2,
+      "step": 0.1
+    }
+  ]
+}

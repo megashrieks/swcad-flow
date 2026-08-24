@@ -1,0 +1,11 @@
+{
+  "body": [
+    { "kind": "hit_area" },
+    { "kind": "port", "name": "edge", "direction": "inout", "surface": "outline" }
+  ],
+  "p-in": { "kind": "port", "name": "in", "direction": "in", "facing": [0, -1], "surface": "outline" },
+  "p-in-left": { "kind": "port", "name": "in", "direction": "in", "facing": [-1, 0], "surface": "outline" },
+  "p-yes": { "kind": "port", "name": "yes", "direction": "out", "facing": [1, 0], "surface": "outline" },
+  "p-no": { "kind": "port", "name": "no", "direction": "out", "facing": [0, 1], "surface": "outline" },
+  "question": { "kind": "label", "bind": "params.question", "align": "center", "editable": true }
+}

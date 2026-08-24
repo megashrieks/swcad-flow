@@ -1,0 +1,154 @@
+{
+  "id": "note",
+  "name": "Callout",
+  "version": "1.0.0",
+  "category": "flow",
+  "description": "An aside set on the background: an icon in the variant's colour, a heading and a sentence, with no frame. info, warn, success, danger and neutral each read differently without setting a colour by hand. Give it a fill or a stroke to get the boxed form back.",
+  "defaultSize": {
+    "w": 260,
+    "h": 44
+  },
+  "params": [
+    {
+      "name": "variant",
+      "type": "enum",
+      "label": "Variant",
+      "default": "info",
+      "options": [
+        "info",
+        "warn",
+        "success",
+        "danger",
+        "neutral"
+      ]
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "label": "Title",
+      "default": "Note"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "label": "Text",
+      "default": "Something worth saying next to the diagram.",
+      "multiline": true
+    },
+    {
+      "name": "icon",
+      "type": "enum",
+      "label": "Icon",
+      "default": "",
+      "description": "An icon from the shared set in the base library. Blank takes the variant's own; \"none\" draws no icon.",
+      "options": [
+        "",
+        "none",
+        "agent",
+        "alert",
+        "attachment",
+        "backlog",
+        "bell",
+        "board",
+        "burndown",
+        "calendar",
+        "chart",
+        "chat",
+        "check",
+        "comment",
+        "commit",
+        "epic",
+        "feature-flag",
+        "field",
+        "filter",
+        "form",
+        "gear",
+        "git-branch",
+        "image",
+        "inbox",
+        "info",
+        "key",
+        "link",
+        "lock",
+        "marketplace",
+        "mention",
+        "org",
+        "plugin",
+        "pull-request",
+        "retry",
+        "role",
+        "search",
+        "shield",
+        "sprint",
+        "tag",
+        "team",
+        "template",
+        "terminal",
+        "ticket",
+        "timer",
+        "upload",
+        "warning",
+        "workflow"
+      ]
+    },
+    {
+      "name": "accent",
+      "type": "color",
+      "label": "Accent",
+      "default": "",
+      "description": "The icon's colour. Blank takes the variant's own."
+    },
+    {
+      "name": "fill",
+      "type": "color",
+      "label": "Fill",
+      "default": "",
+      "description": "Blank draws no fill. Setting either this or the stroke frames the callout and gives it padding."
+    },
+    {
+      "name": "stroke",
+      "type": "color",
+      "label": "Stroke",
+      "default": "",
+      "description": "Blank draws no border."
+    },
+    {
+      "name": "radius",
+      "type": "number",
+      "label": "Corner radius",
+      "default": 0,
+      "min": 0,
+      "step": 1,
+      "description": "Only visible on a framed callout."
+    },
+    {
+      "name": "ink",
+      "type": "color",
+      "label": "Text",
+      "default": "var(--sw-ink)"
+    },
+    {
+      "name": "fontSize",
+      "type": "number",
+      "label": "Font size",
+      "default": 13,
+      "min": 6
+    },
+    {
+      "name": "iconSize",
+      "type": "number",
+      "label": "Icon size",
+      "default": 18,
+      "min": 0,
+      "step": 1
+    },
+    {
+      "name": "lineWidth",
+      "type": "number",
+      "label": "Line width",
+      "default": 1.2,
+      "min": 0.2,
+      "step": 0.1
+    }
+  ]
+}
